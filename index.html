@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Agro - Sesame Seeds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Sesame seeds</h1>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h2>NK Agro exports natural, semi-premium as well as premium sesame seeds and offer them at unbeatable prices.</h2>
+        </header>
+        <div class="products">
+            <div class="product" onclick="openPopup('semi-premium')">
+                <img src="Sesame.jpg" alt="Semi Premium Sesame Seeds">
+                <h3>Semi Premium</h3>
+                <a href="#" class="details">DETAILS</a>
+            </div>
+            <div class="product" onclick="openPopup('premium')">
+                <img src="premium.jpg" alt="Premium Sesame Seeds">
+                <h3>Premium</h3>
+                <a href="#" class="details">DETAILS</a>
+            </div>
+            <div class="product" onclick="openPopup('natural')">
+                <img src="Natural.jpg" alt="Natural Sesame Seeds">
+                <h3>Natural</h3>
+                <a href="#" class="details">DETAILS</a>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="">
+            <div id="popup-text">
+                <h3 id="popup-title"></h3>
+                <p id="popup-specs"></p>
+                <p id="popup-description"></p>
+                <button class="submit-button">SUBMIT AN ENQUIRY</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
